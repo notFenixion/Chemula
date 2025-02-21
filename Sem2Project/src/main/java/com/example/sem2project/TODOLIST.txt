@@ -1,0 +1,27 @@
+- Make actual alert button
+- Make actual bond button deco
+- Implement calculation for atom name
+- Get actual good deco lmao
+- Fix the transparency issue in selection screen -> displayed icon
+- Create an actual logo to replace nushigh.png
+- do save and load functionality (find a way to store and generate compounds?)  - let user create a file name and regex on it
+
+Less impt stuff:
+- revamp all the classes to add skeletal...
+- add skeletal
+- add name to compound
+- add condensed formula
+- change click and place to drag and drop
+
+KNOWN BUGS/ISSUES:
+- Atoms can sometimes be dragged out of board
+- Atoms cannot be generated near the borders of the board -> this is so the atom does not display out of the board
+
+
+
+Saving format:
+Atoms: atomType, xPos, yPos, connectedAtoms[pair<atom1,hitbox1>, pair<atom2, hitbox2>, ...]
+
+Loading format:
+Generate all atoms first and store connectedAtoms in an adjlist
+taking adjlist, create all the bondlines yea

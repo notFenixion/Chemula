@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="600.0" style="-fx-background-color: #efe9d7;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sem2project.Controllers.AboutMeController">
+   <children>
+      <VBox prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label prefHeight="62.0" prefWidth="753.0" style="-fx-border-color: black;" text="About the Programmer!">
+               <font>
+                  <Font name="System Bold" size="23.0" />
+               </font>
+            </Label>
+            <ScrollPane hbarPolicy="NEVER" prefHeight="264.0" prefWidth="580.0" style="-fx-border-color: black; -fx-background-color: #efe9d7;" vbarPolicy="NEVER">
+               <content>
+                  <Label fx:id="aboutMeText" alignment="TOP_LEFT" prefHeight="261.0" prefWidth="586.0" style="-fx-background-color: #efe9d7;" text="&#10;&#10;Hello! I'm Rongyi, and I am a year 3 CS student at the time of making this&#10;As your average CS student I get 0 hours of sleep per day :)&#10;&#10;Programming-related background info:&#10;- Google is my best friend :D&#10;- I haven't really made any insane projects like some peers have but hey I'm working on it&#10;- For some reason I still have not learnt how to use Github&#10;- How am I in IO??&#10;&#10;Random fun facts about this app:&#10;- Chemula = Chemistry + Formula&#10;- It has very limited functionality due to this phenomenon we call skill issue&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;" />
+               </content>
+               <padding>
+                  <Insets left="5.0" />
+               </padding>
+            </ScrollPane>
+            <ComboBox fx:id="languageComboBox" prefHeight="0.0" prefWidth="150.0" promptText="Choose a language">
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+            </ComboBox>
+         </children>
+      </VBox>
+   </children>
+   <padding>
+      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+   </padding>
+</AnchorPane>
